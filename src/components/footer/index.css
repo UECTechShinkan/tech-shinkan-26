@@ -1,0 +1,12 @@
+.footer {
+	border-top: 1px solid var(--line);
+	padding: 1.2rem;
+	margin-top: 48px;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	color: var(--text-muted);
+	font-size: 0.9rem;
+}

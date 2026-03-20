@@ -1,0 +1,10 @@
+.detail ul {
+	margin: 12px 0 0;
+	padding-left: 1.2rem;
+	display: grid;
+	gap: 10px;
+}
+
+.detail li {
+	line-height: 1.8;
+}

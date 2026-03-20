@@ -1,0 +1,9 @@
+.heading {
+    margin: 30px 0 18px;
+}
+
+.heading h2 {
+    margin: 0;
+    font-size: clamp(1.45rem, 3.2vw, 2.1rem);
+    letter-spacing: -0.02em;
+}

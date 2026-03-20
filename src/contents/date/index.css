@@ -1,0 +1,37 @@
+.table-div {
+	overflow-x: auto;
+	margin-top: 1rem;
+	-webkit-overflow-scrolling: touch;
+}
+
+.schedule-table {
+	border-collapse: collapse;
+	width: 100%;
+	min-width: 680px;
+	border-radius: 14px;
+	overflow: hidden;
+}
+
+td,
+th {
+	border: solid 1px var(--line);
+	padding: 0.7rem;
+	text-align: left;
+}
+
+thead th {
+	font-weight: 600;
+	background: var(--surface);
+}
+
+@media (max-width: 640px) {
+	.schedule-table {
+		min-width: 560px;
+	}
+
+	td,
+	th {
+		padding: 0.56rem;
+		font-size: 0.88rem;
+	}
+}

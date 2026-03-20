@@ -1,0 +1,133 @@
+.header-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in oklab, var(--bg), transparent 28%);
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  gap: 14px;
+  flex-wrap: nowrap;
+}
+
+.title {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: min(58vw, 430px);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.92rem;
+  padding: 8px 10px;
+  border-radius: 999px;
+  transition: color 0.22s ease, background 0.22s ease, transform 0.22s ease;
+}
+
+.nav a:hover {
+  color: var(--text);
+  background: var(--surface);
+  transform: translateY(-1px);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.theme-button,
+.menu-button {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: transform 0.22s ease, background 0.22s ease;
+}
+
+.theme-button:hover,
+.menu-button:hover {
+  transform: translateY(-1px);
+  background: var(--surface-strong);
+}
+
+.menu-button {
+  display: none;
+}
+
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.mobile-menu.open {
+  max-height: 70vh;
+}
+
+.mobile-menu-content {
+  display: grid;
+  gap: 6px;
+  padding: 0 20px 14px;
+}
+
+.mobile-menu-content a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+@media (max-width: 960px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: inline-flex;
+  }
+
+  .title {
+    max-width: min(52vw, 320px);
+  }
+}
+
+@media (max-width: 560px) {
+  .header-bar {
+    min-height: 64px;
+    gap: 8px;
+  }
+
+  .title {
+    max-width: min(46vw, 210px);
+    font-size: 0.9rem;
+  }
+
+  .theme-button,
+  .menu-button {
+    padding: 7px 10px;
+    font-size: 0.82rem;
+  }
+}
