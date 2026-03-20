@@ -12,6 +12,34 @@ dist
 dist-ssr
 *.local
 
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.csr
+
+# Package manager auth
+.npmrc
+.yarnrc
+
+# Coverage / reports / caches
+coverage
+.nyc_output
+.cache
+.parcel-cache
+.turbo
+*.tsbuildinfo
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
