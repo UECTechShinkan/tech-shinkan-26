@@ -16,6 +16,10 @@ dist-ssr
 .env
 .env.*
 !.env.example
+*.env
+*.secret
+*.secrets
+.envrc
 *.pem
 *.key
 *.p12
@@ -23,6 +27,10 @@ dist-ssr
 *.crt
 *.cer
 *.csr
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
 
 # Package manager auth
 .npmrc

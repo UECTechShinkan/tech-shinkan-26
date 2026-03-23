@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tsukimi41.github.io/2026-uecTechShinkan/",
+  "homepage": "https://uectechshinkan.github.io/tech-shinkan-26/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

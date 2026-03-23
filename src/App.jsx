@@ -163,7 +163,7 @@ function App() {
           <div className="hero-meta" aria-label="イベント情報ハイライト">
             <span>2026 SPRING</span>
             <span>UEC TECH CLUBS</span>
-            <span>ON CAMPUS + ONLINE</span>
+            <span>ON CAMPUS</span>
           </div>
           <div className="hero-actions">
             <a href="#contents" className="cta primary">
@@ -181,7 +181,7 @@ function App() {
           <Heading name="概要" />
           <p>
             「何を作れるのか」「どんな先輩がいるのか」「授業と両立できるか」。
-            新入生が気になるポイントを、1日でまとめて確認できる場として
+            新入生が気になるポイントを、開催期間中にまとめて確認できる場として
             企画しています。ハードウェア、ソフトウェア、デザイン、データ分析まで、
             幅広い分野の団体が参加します。
           </p>

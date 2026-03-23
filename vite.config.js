@@ -19,5 +19,5 @@ export default defineConfig({
       'X-Frame-Options': 'DENY',
     },
   },
-  base: '/2026-uecTechShinkan/',
+  base: '/tech-shinkan-26/',
 });

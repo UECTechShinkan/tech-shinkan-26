@@ -12,51 +12,46 @@ export const siteInfo = {
 
 export const scheduleItems = [
   {
-    dateLabel: '4/8(水)・4/14(火) 14:00-17:00',
-    place: 'B102 / B202',
-    event: 'LT会',
-    note: '各団体の紹介や技術発表を実施します。',
+    dateLabel: '4/6・4/7・4/11',
+    place: '未定（4月頭に通知予定）',
+    event: 'LT会 / 合同説明会',
+    note: '開始時刻などの詳細は追って案内します。',
   },
   {
-    dateLabel: '4/5(土)・4/8(水)・4/14(火)',
+    dateLabel: '4/6・4/7・4/11（〜17:00）',
+    place: '未定（4月頭に通知予定）',
+    event: 'ブース展示',
+    note: '展示ブース形式で各団体の活動を紹介します。',
+  },
+  {
+    dateLabel: '4/6・4/7・4/11',
     place: 'メインストリート',
     event: 'チラシ配布',
-    note: '対面で活動内容を案内します。',
-  },
-  {
-    dateLabel: '4/20(月) 18:30-20:00',
-    place: 'オンライン',
-    event: '新入生向けQ&A',
-    note: '入部・活動・学業との両立などを相談できます。',
+    note: '4/11 は「新歓UEComic! 2026」と同時開催予定（確定後に追記予定）です。',
   },
 ];
 
 export const detailItems = [
-  'LT会では、各団体の部員が「普段どんな活動をしているか」を実例つきで紹介します。開発の話だけでなく、1年生の過ごし方も聞けます。',
-  '一部回では新入生の発表枠を設ける予定です。発表に挑戦したい人は、後日公開する募集案内を確認してください。',
-  'メインストリートのチラシ配布では、団体ごとの温度感や活動頻度をその場で確認できます。短時間で見学したい人にもおすすめです。',
+  '会場は未定です。4月頭に通知予定のため、確定次第このページで案内します。',
+  '4/6・4/7・4/11は、LT会 / 合同説明会・ブース展示（〜17:00）・メインストリートでのチラシ配布を予定しています。',
+  'LT会は MMA さんが行ってくださいます！！開始時間などの詳細が分かり次第、情報を反映します。',
 ];
 
 export const timelineItems = [
   {
-    date: '4/5',
-    label: 'チラシ配布開始',
-    description: 'メインストリートで団体紹介を実施。',
+    date: '4/6',
+    label: '開催日（1日目）',
+    description: 'LT会 / 合同説明会、ブース展示（〜17:00）、チラシ配布を実施予定。',
   },
   {
-    date: '4/8',
-    label: '第1回LT会',
-    description: '技術発表・サークル紹介セッション。',
+    date: '4/7',
+    label: '開催日（2日目）',
+    description: '1日目と同様の形式で実施予定。',
   },
   {
-    date: '4/14',
-    label: '第2回LT会',
-    description: '新歓のメイン回。発表枠も開放予定。',
-  },
-  {
-    date: '4/20',
-    label: 'オンラインQ&A',
-    description: '入部検討者向けの質問会。',
+    date: '4/11',
+    label: '開催日（3日目）',
+    description: '「新歓UEComic! 2026」と同時開催予定（確定後に追記）。',
   },
 ];
 
@@ -175,7 +170,7 @@ export const groups = [
 ];
 
 export const pastEvents = [
-  { year: 2025, url: 'https://youtu.be/dPotlGxP1h4' },
+  { year: 2024, url: 'https://youtu.be/dPotlGxP1h4' },
   { year: 2019, url: 'https://youtu.be/KJmPmHTaTZY' },
   { year: 2018, url: 'https://youtu.be/xOxecgE7WVY' },
   { year: 2017, url: 'https://youtu.be/QQpaWW0FS8c' },

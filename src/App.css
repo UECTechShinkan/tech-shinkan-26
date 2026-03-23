@@ -1,38 +1,38 @@
 :root {
 	color-scheme: light;
-	--bg: #f7f9ff;
-	--surface: rgba(255, 255, 255, 0.78);
+	--bg: #f6f4f1;
+	--surface: rgba(255, 255, 255, 0.82);
 	--surface-strong: #ffffff;
-	--text: #151a31;
-	--text-muted: #5d678f;
+	--text: #1d1d1f;
+	--text-muted: #646464;
 	--line: rgba(0, 0, 0, 0.1);
-	--primary: #3c64ff;
-	--primary-hover: #3357df;
+	--primary: #1d1d1f;
+	--primary-hover: #101011;
 	--radius: 18px;
 	--shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
-	--mesh-1: rgba(255, 122, 171, 0.22);
-	--mesh-2: rgba(124, 99, 255, 0.2);
-	--mesh-3: rgba(36, 206, 255, 0.2);
-	--mesh-4: rgba(125, 230, 116, 0.16);
+	--mesh-1: rgba(205, 184, 156, 0.2);
+	--mesh-2: rgba(171, 165, 154, 0.18);
+	--mesh-3: rgba(148, 144, 138, 0.14);
+	--mesh-4: rgba(130, 124, 115, 0.12);
 	--font-ui: 'Inter Variable', 'Inter', -apple-system, BlinkMacSystemFont,
 		'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif;
 }
 
 :root[data-theme='dark'] {
 	color-scheme: dark;
-	--bg: #070a14;
-	--surface: rgba(19, 21, 40, 0.78);
-	--surface-strong: #0f1328;
-	--text: #eef2ff;
-	--text-muted: #9ea7ce;
+	--bg: #0f0f10;
+	--surface: rgba(28, 28, 30, 0.8);
+	--surface-strong: #1d1d1f;
+	--text: #f5f5f7;
+	--text-muted: #a2a2a7;
 	--line: rgba(255, 255, 255, 0.14);
-	--primary: #57a8ff;
-	--primary-hover: #7ec1ff;
+	--primary: #f5f5f7;
+	--primary-hover: #ffffff;
 	--shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
-	--mesh-1: rgba(255, 98, 140, 0.2);
-	--mesh-2: rgba(114, 126, 255, 0.24);
-	--mesh-3: rgba(50, 180, 255, 0.22);
-	--mesh-4: rgba(84, 214, 145, 0.16);
+	--mesh-1: rgba(114, 107, 95, 0.2);
+	--mesh-2: rgba(98, 95, 88, 0.19);
+	--mesh-3: rgba(84, 81, 77, 0.16);
+	--mesh-4: rgba(70, 68, 65, 0.14);
 }
 
 html {
@@ -83,9 +83,9 @@ a {
 	width: 100%;
 	height: 3px;
 	z-index: 40;
-	background: linear-gradient(90deg, #4f6fff, #6ad6ff 42%, #8bffb2);
+	background: linear-gradient(90deg, #2f2f31, #5a5a5d 48%, #94928d);
 	transform-origin: left center;
-	box-shadow: 0 0 24px rgba(95, 154, 255, 0.65);
+	box-shadow: 0 0 24px rgba(0, 0, 0, 0.22);
 }
 
 .app-shell::before,
@@ -130,10 +130,10 @@ a {
 	background:
 		radial-gradient(
 			circle at var(--spot-x, 50%) var(--spot-y, 40%),
-			rgba(41, 151, 255, 0.28),
+			rgba(186, 176, 162, 0.28),
 			transparent 45%
 		),
-		radial-gradient(circle at 20% 20%, rgba(113, 79, 255, 0.2), transparent 52%);
+		radial-gradient(circle at 20% 20%, rgba(123, 117, 109, 0.2), transparent 52%);
 	filter: blur(8px);
 	transform: translateZ(0);
 	animation: ambientFloat 14s ease-in-out infinite alternate;
@@ -199,14 +199,14 @@ a {
 }
 
 .cta.primary {
-	background: linear-gradient(135deg, color-mix(in oklab, var(--primary), #fff 6%), #5cc9ff 90%);
-	color: #fff;
+	background: var(--primary);
+	color: var(--bg);
 }
 
 .cta.primary:hover {
-	background: linear-gradient(135deg, var(--primary-hover), #4ab1ff 92%);
+	background: var(--primary-hover);
 	transform: translateY(-1px);
-	box-shadow: 0 14px 30px rgba(57, 119, 255, 0.34);
+	box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
 }
 
 .cta.secondary {
@@ -251,31 +251,31 @@ a {
 }
 
 .section-tone-aurora {
-	--tone-bg: radial-gradient(circle at 12% 8%, rgba(92, 122, 255, 0.2), transparent 36%);
+	--tone-bg: radial-gradient(circle at 12% 8%, rgba(182, 172, 158, 0.19), transparent 36%);
 }
 
 .section-tone-sunset {
-	--tone-bg: radial-gradient(circle at 84% 14%, rgba(255, 126, 147, 0.2), transparent 34%);
+	--tone-bg: radial-gradient(circle at 84% 14%, rgba(209, 184, 152, 0.2), transparent 34%);
 }
 
 .section-tone-mint {
-	--tone-bg: radial-gradient(circle at 14% 80%, rgba(115, 232, 179, 0.19), transparent 32%);
+	--tone-bg: radial-gradient(circle at 14% 80%, rgba(161, 155, 145, 0.18), transparent 32%);
 }
 
 .section-tone-cosmic {
-	--tone-bg: radial-gradient(circle at 80% 80%, rgba(141, 110, 255, 0.2), transparent 34%);
+	--tone-bg: radial-gradient(circle at 80% 80%, rgba(174, 168, 159, 0.18), transparent 34%);
 }
 
 .section-tone-rose {
-	--tone-bg: radial-gradient(circle at 18% 20%, rgba(255, 113, 173, 0.19), transparent 33%);
+	--tone-bg: radial-gradient(circle at 18% 20%, rgba(186, 178, 166, 0.17), transparent 33%);
 }
 
 .section-tone-amber {
-	--tone-bg: radial-gradient(circle at 82% 22%, rgba(255, 186, 85, 0.18), transparent 34%);
+	--tone-bg: radial-gradient(circle at 82% 22%, rgba(205, 177, 140, 0.2), transparent 34%);
 }
 
 .section-tone-ocean {
-	--tone-bg: radial-gradient(circle at 12% 70%, rgba(75, 197, 255, 0.2), transparent 35%);
+	--tone-bg: radial-gradient(circle at 12% 70%, rgba(168, 160, 150, 0.18), transparent 35%);
 }
 
 .timeline {

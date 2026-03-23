@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Button from '@mui/material/Button';
 import './index.css';
 
 const sanitizeExternalUrl = (url) => {
@@ -34,22 +32,22 @@ const Circle = ({ name, image, description, homeUrl, xUrl }) => {
       <p>{description}</p>
       <div className="button">
         {homeUrl && (
-          <Button
-            variant="contained"
+          <button
+            type="button"
+            className="card-link"
             onClick={() => handleButtonClick(homeUrl)}
-            sx={{ textTransform: 'none' }}
           >
             ホームページ
-          </Button>
+          </button>
         )}
         {xUrl && (
-          <Button
-            variant="outlined"
+          <button
+            type="button"
+            className="card-link secondary"
             onClick={() => handleButtonClick(xUrl)}
-            sx={{ textTransform: 'none' }}
           >
             𝕏(Twitter)
-          </Button>
+          </button>
         )}
       </div>
     </div>
