@@ -27,7 +27,7 @@ export const scheduleItems = [
     dateLabel: '4/6・4/7・4/11',
     place: 'メインストリート',
     event: 'チラシ配布',
-    note: '4/11 は「新歓UEComic! 2026」と同時開催予定（確定後に追記予定）です。',
+    note: 'メインストリートでチラシ配布を実施予定です。',
   },
 ];
 
@@ -51,7 +51,7 @@ export const timelineItems = [
   {
     date: '4/11',
     label: '開催日（3日目）',
-    description: '「新歓UEComic! 2026」と同時開催予定（確定後に追記）。',
+    description: 'ブース展示を主軸に実施予定です。',
   },
 ];
 

@@ -36,22 +36,28 @@ export const Header = ({ title, sections, theme, onToggleTheme }) => {
         <div className="header-actions">
           <button
             type="button"
-            className="theme-button"
+            className="theme-button action-pill"
             onClick={onToggleTheme}
             aria-label="テーマ切替"
           >
-            {theme === 'light' ? 'Dark' : 'Light'}
+            <span className="pill-icon" aria-hidden="true">
+              ◐
+            </span>
+            <span>{theme === 'light' ? 'Dark' : 'Light'}</span>
           </button>
 
           <button
             type="button"
-            className="menu-button"
+            className="menu-button action-pill"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             aria-label="メニュー"
           >
-            Menu
+            <span className="pill-icon" aria-hidden="true">
+              ☰
+            </span>
+            <span>Menu</span>
           </button>
         </div>
       </Container>
