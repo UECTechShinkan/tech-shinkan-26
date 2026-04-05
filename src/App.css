@@ -47,9 +47,15 @@ body,
 	overflow-x: clip;
 }
 
+#root {
+	position: relative;
+	z-index: 1;
+}
+
 body {
 	margin: 0;
 	min-width: 320px;
+	position: relative;
 	font-family: var(--font-ui);
 	background:
 		radial-gradient(circle at 8% 8%, var(--mesh-1), transparent 32%),
@@ -61,6 +67,84 @@ body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.body-decoration {
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.body-orb {
+	position: absolute;
+	border-radius: 999px;
+	filter: blur(2px);
+	opacity: 0.6;
+	animation: floatOrb 14s ease-in-out infinite alternate;
+}
+
+.body-orb-a {
+	top: 10vh;
+	right: 6vw;
+	width: 64px;
+	height: 64px;
+	background: radial-gradient(circle at 35% 35%, #ffffff, #d4c6b3 72%, #b2a28d 100%);
+	box-shadow: 0 0 22px rgba(180, 160, 130, 0.26);
+}
+
+.body-orb-b {
+	bottom: 16vh;
+	left: 5vw;
+	width: 108px;
+	height: 108px;
+	background: radial-gradient(circle at 35% 35%, #ffffff, #ece3d6 60%, #c9b79f 100%);
+	box-shadow: 0 0 28px rgba(201, 183, 159, 0.22);
+	animation-duration: 18s;
+	animation-direction: alternate-reverse;
+}
+
+.body-orb-c {
+	top: 54vh;
+	right: 18vw;
+	width: 42px;
+	height: 42px;
+	background: radial-gradient(circle at 35% 35%, #ffffff, #d8d2c9 64%, #a79d92 100%);
+	box-shadow: 0 0 16px rgba(167, 157, 146, 0.24);
+	animation-duration: 16s;
+}
+
+.body-ribbon {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 2px;
+	height: 100vh;
+	background: linear-gradient(
+		180deg,
+		transparent,
+		rgba(139, 126, 111, 0.12) 15%,
+		rgba(139, 126, 111, 0.12) 85%,
+		transparent
+	);
+	transform: translateX(-50%);
+	opacity: 0.45;
+}
+
+.body-caption {
+	position: absolute;
+	left: 24px;
+	bottom: 22px;
+	padding: 8px 12px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.62);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	color: var(--text-muted);
+	font-size: 0.72rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
 }
 
 * {
@@ -389,6 +473,15 @@ a {
 	}
 }
 
+@keyframes floatOrb {
+	0% {
+		transform: translate3d(0, 0, 0) scale(1);
+	}
+	100% {
+		transform: translate3d(0, -18px, 0) scale(1.06);
+	}
+}
+
 @media (prefers-reduced-motion: reduce) {
 	* {
 		animation: none !important;
@@ -399,6 +492,10 @@ a {
 	.reveal {
 		opacity: 1;
 		transform: none;
+	}
+
+	.body-orb {
+		animation: none;
 	}
 }
 
