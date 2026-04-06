@@ -11,7 +11,7 @@ export const Footer = ({ title }) => {
           画面の外側にも、もうひとつだけ挨拶を置いています。
         </p>
         <p className="cipher-footnote" aria-label="cipher-footnote">
-          rot13: uryyb | bin: 01101111 01101011 | mojibake-like: Ã£ÂÂÃ£ÂÂÃ£ÂÂÃ£ÂÂ
+          rot13: uryyb | bin: 01101111 01101011 | mojibake-like: e38288e38186e38193e3819d
         </p>
       </div>
     </footer>

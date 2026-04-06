@@ -30,7 +30,7 @@ const showConsoleGreeting = () => {
   console.log('%c[base64] V2VsY29tZSB0byBUZWNoIFNoaW5rYW4=', 'color:#6b7280; font-family:monospace; font-size:11px;');
   console.log('%c[rot13] Grpu Fuvaxna vf nyjnlf jngpuvat gur pbafbyr.', 'color:#6b7280; font-family:monospace; font-size:11px;');
   console.log('%c[morse] -. . ...- . .-. / ... - --- .--. / -... ..- .. .-.. -.. .. -. --.', 'color:#6b7280; font-family:monospace; font-size:11px;');
-  console.log('%c[mojibake-like] Ã£ÂÂÃ£ÂÂÃ£ÂÂÃ£ÂÂ / Ã£ÂÂÃ£ÂÂÃ£ÂÂÃ£ÂÂ°', 'color:#6b7280; font-family:monospace; font-size:11px;');
+  console.log('%c[mojibake-like] e38288e38186e38193e3819d / e38387e38390e38383e382b0', 'color:#6b7280; font-family:monospace; font-size:11px;');
 };
 
 showConsoleGreeting();
