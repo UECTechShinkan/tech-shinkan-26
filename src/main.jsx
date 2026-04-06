@@ -25,6 +25,12 @@ const showConsoleGreeting = () => {
     '%cWelcome to 技術系合同新歓2026 🚀',
     'color:#a16207; font-size:12px; font-weight:600;'
   );
+  console.log('%c[binary] 01010100 01100101 01100011 01101000 00100000 01001100 01100001 01100010', 'color:#6b7280; font-family:monospace; font-size:11px;');
+  console.log('%c[hex] 54 65 63 68 20 53 68 69 6e 6b 61 6e', 'color:#6b7280; font-family:monospace; font-size:11px;');
+  console.log('%c[base64] V2VsY29tZSB0byBUZWNoIFNoaW5rYW4=', 'color:#6b7280; font-family:monospace; font-size:11px;');
+  console.log('%c[rot13] Grpu Fuvaxna vf nyjnlf jngpuvat gur pbafbyr.', 'color:#6b7280; font-family:monospace; font-size:11px;');
+  console.log('%c[morse] -. . ...- . .-. / ... - --- .--. / -... ..- .. .-.. -.. .. -. --.', 'color:#6b7280; font-family:monospace; font-size:11px;');
+  console.log('%c[mojibake-like] Ã£ÂÂÃ£ÂÂÃ£ÂÂÃ£ÂÂ / Ã£ÂÂÃ£ÂÂÃ£ÂÂÃ£ÂÂ°', 'color:#6b7280; font-family:monospace; font-size:11px;');
 };
 
 showConsoleGreeting();

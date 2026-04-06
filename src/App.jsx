@@ -165,6 +165,9 @@ function App() {
             <span>UEC TECH CLUBS</span>
             <span>ON CAMPUS</span>
           </div>
+          <p className="cipher-hint" aria-label="hidden-cipher-hint">
+            01010100 01100101 01100011 01101000 | 54 65 63 68 | VGVjaA==
+          </p>
           <div className="hero-actions">
             <a href="#contents" className="cta primary">
               開催内容を見る

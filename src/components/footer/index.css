@@ -10,3 +10,21 @@
 	color: var(--text-muted);
 	font-size: 0.9rem;
 }
+
+.easter-hint {
+	margin: 0.35rem 0 0;
+	text-align: center;
+	color: color-mix(in oklab, var(--text-muted), transparent 18%);
+	font-size: 0.74rem;
+	letter-spacing: 0.04em;
+}
+
+.cipher-footnote {
+	margin: 0.26rem 0 0;
+	text-align: center;
+	color: color-mix(in oklab, var(--text-muted), transparent 24%);
+	font-size: 0.67rem;
+	font-family: 'Consolas', 'SFMono-Regular', 'Roboto Mono', monospace;
+	letter-spacing: 0.03em;
+	word-break: break-word;
+}

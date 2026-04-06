@@ -271,6 +271,17 @@ a {
 	flex-wrap: wrap;
 }
 
+.cipher-hint {
+	margin: 10px 0 0;
+	font-size: 0.72rem;
+	letter-spacing: 0.09em;
+	font-family: 'Consolas', 'SFMono-Regular', 'Roboto Mono', monospace;
+	color: color-mix(in oklab, var(--text-muted), transparent 8%);
+	opacity: 0.78;
+	user-select: text;
+	word-break: break-word;
+}
+
 .cta {
 	display: inline-flex;
 	align-items: center;

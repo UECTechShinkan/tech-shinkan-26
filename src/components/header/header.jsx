@@ -19,13 +19,26 @@ export const Header = ({ title, sections, theme, onToggleTheme }) => {
   }, []);
 
   return (
-    <header className="header-wrap">
+    <header
+      className="header-wrap"
+      data-cipher-base64="VGVjaCBTaGlua2FuIDIwMjYgLSBzaGFkb3cgcHJvdG9jb2w="
+      data-cipher-hex="54 65 63 68 20 4c 61 62"
+    >
       <Container maxWidth="lg" className="header-bar">
-        <a href="#" className="title" aria-label="ページ先頭へ移動">
+        <a
+          href="#"
+          className="title"
+          aria-label="ページ先頭へ移動"
+          data-cipher-mojibake="Ã£ÂÂ¿Ã£ÂÂ¤Ã£ÂÂÃ£ÂÂÃ£ÂÂ­"
+        >
           {title}
         </a>
 
-        <nav className="nav" aria-label="グローバルナビゲーション">
+        <nav
+          className="nav"
+          aria-label="グローバルナビゲーション"
+          data-cipher-morse="- . -.-. .... / ... .... .. -. -.- .- -." 
+        >
           {sections.map((section) => (
             <a key={section.id} href={`#${section.id}`}>
               {section.label}
