@@ -172,7 +172,7 @@ export const groups = [
     description:
       '複数部隊でロボットやものづくりに取り組む総合技術系サークルです。',
     homeUrl: 'https://sites.google.com/view/uec-rmf',
-    xUrl: '',
+    xUrl: 'https://x.com/robomech_uec',
   },
   {
     name: 'TeRes',
@@ -180,7 +180,7 @@ export const groups = [
     description:
       'PG、イラスト、DTM、映像などPCを使った創作活動を幅広く展開しています。',
     homeUrl: 'http://www.teres.club.uec.ac.jp',
-    xUrl: '',
+    xUrl: 'https://x.com/teresUEC',
   },
 ];
 
